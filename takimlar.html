@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula1 23490042</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="front/css/bootstrap.min.css">
+    <link rel="stylesheet" href="front/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"/>
+  </head>
+  <body class="takimlar" id="arac">
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="index.html">Formula1<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+          <li><a href="sampiyonluklar.html">Şampiyonlar</a></li>
+          <li><a href="takimlar.html">Takımlar</a></li>
+          <li><a href="pilotlar.html">Pilotlar</a></li>
+          <li><a href="refleks.html">Refleks Testi</a></li>
+          <li><a href="mailto:23490042@stu.omu.edu.tr">Bize ulaş</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+      <div class="content">
+        <h2>F1'in renkleri</h2>
+        <h1>Takımlar</h1>
+        <p>Formula1 de şuanda 10 takım bulunuyor takımlar her sene kendi araçlarıyla yarışlara çıkar ve galibiyeti kovalar.
+
+        </p>
+        <h3>Takımını Seç</h3>
+      </div>
+   <div class="colour-select" >
+    <div id="alfa"></div>
+    <div id="ferrari"></div>
+    <div id="mercedes"></div>
+    <div id="williams"></div>
+    <div id="mclaren"></div>
+    <div id="haas"></div>
+    <div id="aston"></div>
+    <div id="redbull"></div>
+    <div id="alpine"></div>
+    <div id="alpha"></div>
+
+   </div>
+    </section>
+    </header>
+    <script>
+      let alfaBtn = document.getElementById("alfa");
+      let ferrariBtn = document.getElementById("ferrari");
+      let mercedesBtn = document.getElementById("mercedes");
+      let williamsBtn = document.getElementById("williams");
+      let mclarenBtn = document.getElementById("mclaren");
+      let haasBtn = document.getElementById("haas");
+      let astonBtn = document.getElementById("aston");
+      let redbullBtn = document.getElementById("redbull");
+      let alpineBtn = document.getElementById("alpine");
+      let alphaBtn = document.getElementById("alpha");
+      let aracBtn = document.getElementById("arac");
+      alfaBtn.onclick = function(){
+        arac.style.backgroundImage = "url(assets/front/img/soldanresim/alfagri.jpeg)";
+      }
+      ferrariBtn.onclick = function(){
+        arac.style.backgroundImage = "url(assets/front/img/soldanresim/ferrarigri.jpeg)";
+      }
+      mercedesBtn.onclick = function(){
+        arac.style.backgroundImage = "url(assets/front/img/soldanresim/mercedesgri.jpeg)";
+      }
+      williamsBtn.onclick = function(){
+        arac.style.backgroundImage = "url(assets/front/img/soldanresim/williamsgri.jpeg)";
+      }
+      mclarenBtn.onclick = function(){
+        arac.style.backgroundImage = "url(assets/front/img/soldanresim/mclarengri.jpeg)";
+      }
+      haasBtn.onclick = function(){
+        arac.style.backgroundImage = "url(assets/front/img/soldanresim/haasgri.jpeg)";
+      }
+      astonBtn.onclick = function(){
+        arac.style.backgroundImage = "url(assets/front/img/soldanresim/astongri.jpeg)";
+      }
+      redbullBtn.onclick = function(){
+        arac.style.backgroundImage = "url(assets/front/img/soldanresim/redbullgri.jpeg)";
+      }
+      alpineBtn.onclick = function(){
+        arac.style.backgroundImage = "url(assets/front/img/soldanresim/alpinegri.jpeg)";
+      }
+      alphaBtn.onclick = function(){
+        arac.style.backgroundImage = "url(assets/front/img/soldanresim/alphagri.jpeg)";
+      }
+
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+  
+    <script src="front/js/jquery-3.7.1.min.js"></script>
+    <script src="front/js/bootstrap.bundle.min.js"></script>
+    <script src="front/js/script.js"></script>
+      </script>
+  </body>
+</html>
+/*
+             ^   Made by Habil Demirci 
+            /A\   02 august 2024
+           //I\\
+          ///I\\\
+         ////I\\\\
+        /////I\\\\\
+       //////I\\\\\\
+      ///////I\\\\\\\
+     ////////I\\\\\\\\
+    /////////I\\\\\\\\\
+   //////////I\\\\\\\\\\
+    '////////I\\\\\\\\'
+      '//////I\\\\\\'
+        '////I\\\\'
+          '//I\\'
+            'I'
+*/

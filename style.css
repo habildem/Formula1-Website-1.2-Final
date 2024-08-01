@@ -1,0 +1,1161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/*
+             ^   Made by Habil Demirci 
+            /A\   02 august 2024
+           //I\\
+          ///I\\\
+         ////I\\\\
+        /////I\\\\\
+       //////I\\\\\\
+      ///////I\\\\\\\
+     ////////I\\\\\\\\
+    /////////I\\\\\\\\\
+   //////////I\\\\\\\\\\
+    '////////I\\\\\\\\'
+      '//////I\\\\\\'
+        '////I\\\\'
+          '//I\\'
+            'I'
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+.startstop {
+  position: fixed;
+  top: 450px;
+  right: 50px;
+  width: 250px;
+  padding: 20px;
+  z-index: 999;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+
+.navbar .logo span {
+  color: #a31b1b;
+}
+
+.navbar .menu-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #a31b1b;
+}
+
+.hero-section .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  color: #fff;
+  position: absolute;
+
+}
+
+.hero-section .content h2 {
+  font-size: 3rem;
+  max-width: 600px;
+  line-height: 70px;
+  position: absolute;
+  left: 80px;
+  top: 300px;
+
+}
+
+.hero-section .content p {
+  font-weight: 300;
+  max-width: 600px;
+  margin-top: 15px;
+  position: absolute;
+  left: 80px;
+  top: 400px;
+
+}
+
+.hero-section .content button {
+  background: #c86363;
+  padding: 12px 30px;
+  left: 80px;
+  top: 460px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 38px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+  position: absolute;
+
+}
+
+.hero-section .content button:hover {
+  color: #ffffff;
+  background: #a31b1b;
+}
+
+
+.video-container {	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #333;
+  z-index: -1;
+}
+.video-container video {
+    min-width: 100%;
+	min-height: 100%;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+  z-index: -1;
+}
+
+
+#close-menu-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#hamburger-btn {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  header.show-mobile-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar .logo {
+    font-size: 1.7rem;
+  }
+
+    
+  #hamburger-btn, #close-menu-btn {
+    display: block;
+  }
+
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+    z-index: 1;
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+    z-index: 1;
+  }
+
+  .navbar a {
+    color: #ffffff;
+    z-index: 1;
+  }
+
+  .hero-section .content {
+    text-align: center;
+    z-index: 1;
+  }
+
+  .hero-section .content :is(h2, p) {
+    max-width: 100%;
+    z-index: 1;
+  }
+
+  .hero-section .content h2 {
+    font-size: 2.3rem;
+    line-height: 60px;
+    z-index: 1;
+  }
+  
+  .hero-section .content button {
+    padding: 9px 15px;
+    text-decoration: none;
+    z-index: 1;
+    left: 270px;
+    top: 640px;
+  }
+.startstop  {
+  padding: 9px 15px;
+  text-decoration: none;
+  z-index: 1;
+  left: 240px;
+  top: 530px;
+}
+  
+}
+
+.hakkinda{
+  height: 100vh;
+  background-image: url("assets/front/img/hakkında.jpeg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.h-section .cntent {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 3%;
+  text-align: -webkit-center
+  
+}
+
+.h-section .cntent h2 {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 3%;
+  text-align: -webkit-center
+}
+
+.h-section .cntent p {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 3%;
+  text-align: -webkit-center
+  color
+}
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+}
+.pilotlar{
+
+
+height: 100vh;
+background-image: url("assets/front/img/sebastian-vettel-formula-one-indian-grand-prix-fourth-world-championship-celebration.avif");
+background-position: center;
+background-size: cover;
+display: flex;
+align-items: center;
+padding: 0 20px;
+}
+
+.copintainer {
+max-width: 1200px;
+width: 95%;
+}
+.copintent h3 {
+  font-size: 3rem;
+  max-width: 600px;
+  line-height: 70px;
+  color: #ffffff;
+}
+
+.wrapper h3 {
+  font-size: 3rem;
+  max-width: 600px;
+  line-height: 70px;
+  color: #ffffff;
+}
+
+.copintent p {
+  font-weight: 300;
+  max-width: 600px;
+  margin-top: 15px;
+  color: #ffffff;
+}
+
+.hero-section .copintent h2 {
+  font-size: 3rem;
+  max-width: 600px;
+  line-height: 70px;
+  color: #ffffff;
+}
+
+.hero-section .copintent p {
+  font-weight: 300;
+  max-width: 600px;
+  margin-top: 15px;
+  color: #ffffff;
+}
+.copintainer {
+  max-width: 1200px;
+  width: 95%;
+}
+
+.hero-section .copintent {
+max-width: 1200px;
+margin: 0 auto;
+width: 100%;
+color: #fff;
+}
+
+.hero-section .cpintent h2 {
+font-size: 3rem;
+max-width: 600px;
+line-height: 70px;
+}
+
+.hero-section .copintent p {
+font-weight: 300;
+max-width: 600px;
+margin-top: 15px;
+text-decoration: #fff;
+}
+
+#close-menu-btn {
+position: absolute;
+right: 20px;
+top: 20px;
+cursor: pointer;
+display: none;
+z-index: 632;
+}
+
+#hamburger-btn {
+color: #fff;
+cursor: pointer;
+display: none;
+z-index: 642;
+}
+/*
+             ^   Made by Habil Demirci 
+            /A\   02 august 2024
+           //I\\
+          ///I\\\
+         ////I\\\\
+        /////I\\\\\
+       //////I\\\\\\
+      ///////I\\\\\\\
+     ////////I\\\\\\\\
+    /////////I\\\\\\\\\
+   //////////I\\\\\\\\\\
+    '////////I\\\\\\\\'
+      '//////I\\\\\\'
+        '////I\\\\'
+          '//I\\'
+            'I'
+*/
+
+@media (max-width: 768px) {
+header {
+  padding: 10px;
+}
+
+header.show-mobile-menu::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 853;
+}
+
+.navbar .logo {
+  font-size: 1.7rem;
+  z-index: 995;
+}
+
+  
+#hamburger-btn, #close-menu-btn {
+  display: block;
+  z-index: 998;
+}
+
+.navbar .menu-links {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background: #fff;
+  flex-direction: column;
+  padding: 70px 40px 0;
+  transition: left 0.2s ease;
+  z-index: 997;
+}
+
+header.show-mobile-menu .navbar .menu-links {
+  left: 0;
+  z-index: 999;
+}
+
+.navbar a {
+  color: #ffffff;
+}
+
+.hero-section .copintent {
+  text-align: center;
+}
+
+.hero-section .copintent :is(h2, p) {
+  max-width: 100%;
+}
+
+.hero-section .copintent h2 {
+  font-size: 2.3rem;
+  line-height: 60px;
+}
+
+.hero-section .copintent button {
+  padding: 9px 18px;
+  text-decoration: none;
+}
+}
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+margin: auto;
+margin-top: 50px;
+
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -22px;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: smooth;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  background: #b01111;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+
+
+.sampiyonluklar
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+
+.navbar .logo span {
+  color: #a31b1b;
+}
+
+.navbar .menu-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #a31b1b;
+}
+
+.he-section {
+  height: 100vh;
+  background-image: url("pole.jpeg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.he-section .coontent {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  color: #fff;
+}
+
+.he-section .coontent h4 {
+  font-size: 3rem;
+  max-width: 600px;
+  line-height: 70px;
+}
+/*
+             ^   Made by Habil Demirci 
+            /A\   02 august 2024
+           //I\\
+          ///I\\\
+         ////I\\\\
+        /////I\\\\\
+       //////I\\\\\\
+      ///////I\\\\\\\
+     ////////I\\\\\\\\
+    /////////I\\\\\\\\\
+   //////////I\\\\\\\\\\
+    '////////I\\\\\\\\'
+      '//////I\\\\\\'
+        '////I\\\\'
+          '//I\\'
+            'I'
+*/
+.he-section .coontent p {
+  font-weight: 300;
+  max-width: 600px;
+  margin-top: 15px;
+}
+
+#close-menu-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#hamburger-btn {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  header.show-mobile-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar .logo {
+    font-size: 1.7rem;
+  }
+
+    
+  #hamburger-btn, #close-menu-btn {
+    display: block;
+  }
+
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar a {
+    color: #ffffff;
+  }
+
+  .he-section .coontent {
+    text-align: center;
+  }
+
+  .heero-section .coontent :is(h2, p) {
+    max-width: 100%;
+  }
+
+  .heero-section .coontent h2 {
+    font-size: 2.3rem;
+    line-height: 60px;
+  }
+
+}
+
+.takimlar{
+  height: 100vh;
+  background-image: url("assets/front/img/soldanresim/alfagri.jpeg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  transition: background-image 0.3s;
+  }
+  .content{
+margin-top: 10%;
+
+  }
+  .content h2{
+    color: #ffffff;
+    font-size: 34px;
+  }
+  .content h1{
+    font-size: 100px;
+    color: #ffffff;
+    margin-top: -25px;
+  }
+  .content p {
+    max-width: 380px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+
+  }
+  .content h3{
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  .colour-select div{
+    background: #333;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+     margin-right: 10px;
+     cursor: pointer;
+  }
+  .colour-select{
+    display: flex;
+    margin-top: 30px;
+  }
+  .colour-select #ferrari{
+    background: rgb(204, 46, 44);
+  }
+  .colour-select #mercedes{
+    background: rgb(0, 0, 0);
+  }
+  .colour-select #aston{
+    background: rgb(40, 89, 80);
+  }
+  .colour-select #alpine{
+    background: rgb(235, 120, 235);
+  }
+  .colour-select #haas{
+    background: rgb(222, 222, 222);
+  }
+  .colour-select #redbull{
+    background: rgb(5, 21, 41);
+  }
+  .colour-select #williams{
+    background: rgb(81, 159, 217);
+  }
+  .colour-select #alpha{
+    background: rgb(3, 16, 46);
+  }
+  .colour-select #alfa{
+    background: rgb(145, 46, 58);
+  }
+  .colour-select #mclaren{
+    background: rgb(238, 134, 51);
+  }
+  
+  .container {
+width: 100px;
+height: 100vh;
+padding: 20px 10%;
+transition: background-image 0.3s;
+
+
+}
+
+  .hero-section .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  color: #fff;
+  }
+
+  #close-menu-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+  z-index: 632;
+  }
+  
+  #hamburger-btn {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  z-index: 642;
+  }
+  
+  @media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+  
+  header.show-mobile-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 853;
+  }
+  
+  .navbar .logo {
+    font-size: 1.7rem;
+    z-index: 995;
+  }
+  
+    
+  #hamburger-btn, #close-menu-btn {
+    display: block;
+    z-index: 998;
+  }
+  
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+    z-index: 997;
+  }
+  
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+    z-index: 999;
+  }
+  
+  .navbar a {
+    color: #000000;
+  }
+  
+  .hero-section .content {
+    text-align: center;
+  }
+  
+  .hero-section .content :is(h2, p) {
+    max-width: 100%;
+  }
+  
+  .hero-section .content h2 {
+    font-size: 2.3rem;
+    line-height: 60px;
+  }
+
+  }
+
+
+
+
+  
+  .refleks{
+    height: 100vh;
+    background-color: #1d1d1f;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  header .naavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .naavbar .loogo {
+    color: #1d1d1f;
+    font-weight: 600;
+    font-size: 2.1rem;
+    text-decoration: none;
+  }
+  
+  .naavbar .loogo span {
+    color: #a31b1b;
+  }
+  
+  .naavbar .meenu-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+  }
+  
+  .naavbar a {
+    color: #1d1d1f;
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+  
+  .naavbar a:hover {
+    color: #a31b1b;
+  }
+  /*
+             ^   Made by Habil Demirci 
+            /A\   02 august 2024
+           //I\\
+          ///I\\\
+         ////I\\\\
+        /////I\\\\\
+       //////I\\\\\\
+      ///////I\\\\\\\
+     ////////I\\\\\\\\
+    /////////I\\\\\\\\\
+   //////////I\\\\\\\\\\
+    '////////I\\\\\\\\'
+      '//////I\\\\\\'
+        '////I\\\\'
+          '//I\\'
+            'I'
+*/
+  .hero-sectionasd {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .hero-sectionasd .contentasd {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    color: #1d1d1f;
+  }
+  
+  .hero-sectionasd .contentasd h2 {
+    font-size: 3rem;
+    max-width: 600px;
+    line-height: 70px;
+  }
+  
+  .hero-sectionasd .contentasd p {
+    font-weight: 300;
+    max-width: 600px;
+    margin-top: 15px;
+  }
+
+  #close-meenu-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #haamburger-btn {
+    color: #1d1d1f;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 10px;
+    }
+  
+    header.show-mobile-menu::before {
+      content: "";
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(5px);
+    }
+  
+    .naavbar .logo {
+      font-size: 1.7rem;
+    }
+  
+      
+    #haamburger-btn, #close-menu-btn {
+      display: block;
+    }
+  
+    .naavbar .meenu-links {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100vh;
+      background: #f5f5f7;
+      flex-direction: column;
+      padding: 70px 40px 0;
+      transition: left 0.2s ease;
+    }
+  
+    header.show-mobile-meenu .naavbar .meenu-links {
+      left: 0;
+    }
+  
+    .naavbar a {
+      color: #1d1d1f;
+    }
+  
+    .hero-sectionasd .contentasd {
+      text-align: center;
+    }
+  
+    .hero-sectionasd .contentasd :is(h2, p) {
+      max-width: 100%;
+    }
+  
+    .hero-sectionasd .contentasd h2 {
+      font-size: 2.3rem;
+      line-height: 60px;
+    }
+    
+    .hero-sectionasd .contentasd button {
+      padding: 9px 18px;
+      text-decoration: none;
+    }
+  }
+
+  *{
+    padding: 50;
+    margin: 0;
+
+  }
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+
+}
+.footerContainer{
+  width: 100%;
+  padding: 10px 1px 0.4px ;
+ 
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding:  5px;
+  background-color: black;
+  margin: 5px;
+  border-radius: 25%;
+}
+.socialIcons a i{
+  font-size: 1em;
+  color:white;
+  opacity: 0,9;
+}
+
+.socialIcons a:hover{
+  background-color: white;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: black;
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 7.5px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color:white;
+  margin: 5px;
+  text-decoration: none;
+  font-size: 0.65em;
+  opacity: 0.7;
+  transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+.footerBottom{
+  background-color: black;
+  padding: 5px;
+  text-align: center;
+}
+.footerBottom p{
+  color:white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 200;
+  margin: 0px 5px;
+}
+@media (max-width: 175px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width:25%;
+      text-align: center;
+      margin: 5px;
+  }
+  .socialIcons a{
+      padding: 2px;
+      margin: 1px;
+  }
+}
+
